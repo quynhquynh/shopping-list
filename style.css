@@ -1,0 +1,191 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin : 0 auto;
+    margin-top: 50px;
+    font-family: 'Open Sans';
+}
+
+.container{
+    background: #A0B1C8;
+    margin: 20px 25%;
+    padding: 20px 0 40px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Pangolin';
+    font-weight: 300;
+}
+
+form{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form #name{
+    width: 52%;
+    padding-bottom: 5px;
+}
+
+form #quantity{
+    width: 30%;
+    padding-bottom: 5px;
+}
+
+form #name:focus, form #quantity:focus{
+    border: solid 1px black;
+}
+
+form #addBtn{
+    width: 15%;
+    background-color:  #515151;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    color: white;
+    letter-spacing: 0.4em;
+}
+
+table{
+    width: 85%;
+    margin: 0 auto;
+}
+
+table th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color:  #009999;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+table tr:nth-child(even){
+    background-color: #ADC698;
+}
+
+table td:nth-child(1),  th:nth-child(1){
+    width: 15%;
+    text-align: center;
+}
+
+table td:nth-child(2), th:nth-child(2){
+    width: 30%;
+    padding: 5px 5%;
+}
+
+table td:nth-child(3),  th:nth-child(3){
+    width: 20%;
+    text-align: center;
+}
+
+table td:nth-child(4),  th:nth-child(4){
+    width: 20%;
+    text-align: center;
+}
+
+.delBtn{
+    background-color:  transparent;
+    width: 100%;
+    border: none;
+    padding: 5px 5%;
+}
+
+input[type="checkbox"]{
+    width: 0;
+    margin-left: -15%;
+}
+
+input[type="checkbox"]::before {
+    font-family: FontAwesome;
+    content: "\f096";
+    font-size: 1.5em;
+    color: #262626;
+    display: inline-block;
+} 
+
+input[type="checkbox"]:checked::before {
+    content: "\f046";
+    color: #262626;
+    display: inline-block;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.edit{
+    width: 50%;
+}
+
+td > input[type="text"]{
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px grey;
+}
+
+@media only screen and (max-width: 998px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    td > input[type="text"]{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width : 481px) and (max-width: 736px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .edit{
+        width: 80%;
+    }
+    td > input[type="text"]{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    form, table{
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    table{
+        font-size: 0.9em;
+    }
+    table td:nth-child(1), table th:nth-child(1){
+        width: 13%;
+    }
+    table td:nth-child(2), table th:nth-child(2){
+        width: 22%;
+    }
+    table td:nth-child(3), table th:nth-child(3){
+        width: 10%;
+    }
+    table td:nth-child(4), table th:nth-child(4){
+        width: 18%;
+    }
+    .edit{
+        width: 85%;
+    }
+    td > input[type="text"]{
+        width: 90%;
+    }
+}

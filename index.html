@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping list</title>
+    <link href="style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Pangolin|Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>My shopping list</h1>
+    <form action="">
+        <input type="text" id="name" placeholder="Name" style="text-indent: 10px">
+        <input type="text" id="quantity" placeholder="Quantity" style="text-indent: 10px">
+        <input id="addBtn" type="submit" value="ADD" class="add">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>To buy</th>
+                <th>---</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="todo">
+                  
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr class="head">
+                <th class="toggle"><i class="fas fa-angle-down" onclick="isToggle(event)"></i></th>
+                <th>Done</th>
+                <th>---</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="done">
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
